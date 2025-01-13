@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from './pages/RootLayout'
 import ErrorPage from './pages/ErrorPage'
 import Login from './pages/Login'
-import Results from './pages/Register'
+import Results from './pages/Results'
 import Elections from './pages/Elections'
 import ElectionsDetails from './pages/ElectionDetails'
 import Candidates from './pages/Candidates'
