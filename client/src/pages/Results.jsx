@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ResultElection from '../components/ResultElection'
+import { elections as dummyElections } from '../data'
 
 const Results = () => {
   const [elections, setElections] = useState(dummyElections)
