@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { candidates } from '../data'
 import CandidateRating from './CandidateRating'
+import { Link } from 'react-router-dom'
 
 const ResultElection = ({id, thumbnail, title}) => {
     const [totalVotes, setTotalVotes] = useState(521)
@@ -16,12 +17,14 @@ const ResultElection = ({id, thumbnail, title}) => {
                 <img src={thumbnail} alt={title} />
             </div>
         </header>
-            <ul className="result__list">
-                {
-                    electionCandidates.map(candidate => (<CandidateRating key=
-                    {candidate.id} {...candidate} totalVotes={totalVotes} />))
-                }
-            </ul>
+        <ul className="result__list">
+            {
+                electionCandidates.map(candidate => (<CandidateRating key=
+                {candidate.id} {...candidate} totalVotes={totalVotes} />))
+            }
+        </ul>
+        <Link to={`/elections/${id}/candidates`} className='btn primary full'>Enter Election</Link>
+
     </article>
   )
 }
