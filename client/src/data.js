@@ -1,12 +1,12 @@
 import Thumbnail1 from './assets/apple.jpg'
 import Thumbnail2 from './assets/audi.jpg'
 import Thumbnail3 from './assets/boat.jpg'
-import Candidate1 from './assets/Candidate1.jpg'
-import Candidate2 from './assets/Candidate2.jpg'
-import Candidate3 from './assets/Candidate3.jpg'
-import Candidate4 from './assets/Candidate4.jpg'
-import Candidate5 from './assets/Candidate5.jpg'
-import Candidate6 from './assets/Candidate6.jpg'
+import Candidate1 from './assets/candidate1.jpg'
+import Candidate2 from './assets/candidate2.jpg'
+import Candidate3 from './assets/candidate3.jpg'
+import Candidate4 from './assets/candidate4.jpg'
+import Candidate5 from './assets/candidate5.jpg'
+import Candidate6 from './assets/candidate6.jpg'
 
 export const elections = [
     {
