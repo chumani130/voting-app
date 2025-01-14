@@ -410,7 +410,7 @@ nav {
 }
 
 .candidates__header p {
-    mask-border: 3rem;
+    margin-bottom: 3rem;
 }
 
 .candidates__header p .btn.primary {
