@@ -3,14 +3,14 @@ import Image from '../assets/error2.gif'
 import { useNavigate } from 'react-router-dom'
 
 const ErrorPage = () => {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
-  // redirect user to previous page
-  useEffect(() => {
-    setTimeout(() => {
-      navigate(-1)
-    }, 6000)
-  })
+  // // redirect user to previous page
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     navigate(-1)
+  //   }, 6000)
+  // })
 
 
   return (
