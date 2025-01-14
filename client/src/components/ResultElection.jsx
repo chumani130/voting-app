@@ -15,13 +15,13 @@ const ResultElection = ({id, thumbnail, title}) => {
             <div className="result__header-image">
                 <img src={thumbnail} alt={title} />
             </div>
+        </header>
             <ul className="result__list">
                 {
                     electionCandidates.map(candidate => (<CandidateRating key=
                     {candidate.id} {...candidate} totalVotes={totalVotes} />))
                 }
             </ul>
-        </header>
     </article>
   )
 }
