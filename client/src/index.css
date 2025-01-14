@@ -384,6 +384,12 @@ nav {
 }
 
 
+.result__candidate-loader span {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-variant));
+    height: 100%;
+    display: flex;
+}
+
 
 
 
