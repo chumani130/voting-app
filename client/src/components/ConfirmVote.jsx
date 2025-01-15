@@ -1,9 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import {candidates } from   '../data'
+import { useDispatch } from 'react-redux'
+import { UiActions } from '../store/ui-slice'
 
 const ConfirmVote = () => {
 
   const [modalCandidate, setModalCandidate] = useState({})
+
+  const dispatch = useDispatch()
+
+  // close confirm vote modal
+  const closeCandidateModal = () => {
+    dispatch(UiActions.closeVoteCandidateModal())
+  }
 
   // get the selected candidate
   const fetchCandidate = () => {
@@ -30,7 +39,7 @@ const ConfirmVote = () => {
         <p>{modalCandidate?.motto?.length > 45 ? modalCandidate?.motto?.substring(0, 45) + "..." :
           modalCandidate?.motto}</p>
         <div className="confirm__vote-cta">
-          <button className="btn">Cancel</button>
+          <button className="btn" onClick={closeCandidateModal}>Cancel</button>
           <button className="btn primary">Confirm</button>
         </div>
       </div>
