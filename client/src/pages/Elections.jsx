@@ -7,11 +7,11 @@ const Elections = () => {
   const [elections, setElections] = useState(dummyElections)
   return (
     <section className="elections">
-      <header className="container elections__container">
+      <header className="container elections__header">
         <h1>Ongoing Elections</h1>
         <button className="btn primary">Create New Election</button>
       </header>
-      <menu className="election__menu">
+      <menu className="elections__menu">
         {
           elections.map(election => <Election key={election.id} {...election} /> )
         }
