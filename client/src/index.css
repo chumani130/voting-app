@@ -309,19 +309,25 @@ nav {
     .modal__content {
         width: var(--container-w-sm);
     }
+
+    .election {
+        grid-template-columns: 1fr;
+    }
+    
+    .election__info {
+        padding: 2rem 1rem;
+    }
+    
+    .election__image {
+        height: 100%;
+    }
+
+
 }
 
-.election {
-    grid-template-columns: 1fr;
-}
 
-.election__info {
-    padding: 2rem 1rem;
-}
 
-.election__image {
-    height: 100%;
-}
+
 
 /*============================= ELECTIONS =====================*/
 
@@ -378,6 +384,8 @@ nav {
     margin-top: 1rem;
 }
 
+
+ 
 
 
 
@@ -559,6 +567,7 @@ nav {
 .modal__header {
     background: var(--color-primary);
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
