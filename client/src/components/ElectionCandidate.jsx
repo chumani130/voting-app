@@ -10,7 +10,7 @@ const ElectionCandidate = (fullName, image, motto, id) => {
         <div>
             <h5>{fullName}</h5>
             <small>{motto.length > 70 ? motto.substring(0, 70) + "..." : motto}</small>
-            <button className="electionCandidate__btn"><IoMdTrash/></button>
+            <button className="electionCandidate__btn"><IoMdTrash /></button>
         </div>
     </li>
   )
