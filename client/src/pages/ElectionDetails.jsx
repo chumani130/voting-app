@@ -3,6 +3,7 @@ import { elections } from '../data'
 import { useParams } from 'react-router-dom'
 import { candidates } from '../data'
 import{ voters } from '../data'
+import { IoAddOutline } from 'react-icons/io5'
 
 
 const ElectionDetails = () => {
@@ -27,6 +28,7 @@ const ElectionDetails = () => {
             electionCandidates.map(candidate => <ElectionDetails key={candidate.id}
             {...candidate} />)
           }
+          <button className="add__candidate-btn"><IoAddOutline/></button>
         </menu>
 
         <menu className="voters">
